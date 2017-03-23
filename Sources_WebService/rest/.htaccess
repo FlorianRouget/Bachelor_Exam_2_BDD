@@ -1,0 +1,8 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^user/$   RestController.php?view=user_all [nc,qsa]
+RewriteRule ^project/$   RestController.php?view=project_all [nc,qsa]
+RewriteRule ^user/add/$   RestController.php?view=user_add [nc,qsa]
